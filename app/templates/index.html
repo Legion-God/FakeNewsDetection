@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block fnews_title %}Fake News Home Page{% endblock fnews_title %}
+
+<!-- Write the code in fnews_content for homepage -->
+{% block fnews_content %}
+
+<div class="jumbotron">
+    <h1>Fake News Detection homepage</h1>
+    <p class="lead">Making the world a better place by detecting Fake news using Passive Aggressive Classifier.</p>
+
+    <hr class="my-4">
+    <p>This is only for development, may change in future.</p>
+
+<!--  NOTE: pass function of the route you are intending to target.  -->
+    <button>
+        <a href="{{ url_for('results') }}">Go to Results Page</a>
+    </button>
+</div>
+
+
+{% endblock fnews_content %}
