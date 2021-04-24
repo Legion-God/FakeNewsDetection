@@ -26,7 +26,7 @@ in the pycharm often found in bottom panel named as **Terminal** and if **(venv)
 ## Coding Workflow
 NOTE: Always push to a feature branch NEVER directly push to **main** branch.
 
-1. Create or select issue you want to work on, new issue can be easily created by going to issues tab in Github.
+1. Create or select issue you want to work on, new issue can be easily created by going to issues tab in GitHub.
 2. Create a new feature branch on your local machine of format <short_issue_name><issue_number>,
 ex: if someone wants to work on feature frontend which is issue number 9, then branch name would be `frontend9`
    
@@ -43,9 +43,10 @@ if you are working on issue for long time, commit any changes before pulling fro
 `git commit -m "a very helpful commit message describing solution for the issue/feature."`
    
 7. `git push origin <branch_name>` WARNING: don't write `main` in branch_name, write the name of feature branch you
-worked on your local machine.
+worked on your local machine. You must be on branch from where you want to push code aka source branch and <branch_name> 
+   is destination branch.
    
-8. Open Github and you will see an option to create a Pull Request(PR), create a PR and then leave for review. 
+8. Open GitHub, and you will see an option to create a Pull Request(PR), create a PR and then leave for review. 
 Someone else will do a code-review and merge it to `main`. If tests failed when creating a PR request close it and 
    make new PR with changes.
    
