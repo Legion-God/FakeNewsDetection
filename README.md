@@ -1,7 +1,7 @@
 # FakeNewsDetection
 
-![Test workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/tests.yml/badge.svg?event=pull_request)
-[![Deployment workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/deploy.yml/badge.svg?event=push)](https://fake-news0.herokuapp.com/)
+![Test workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/tests.yml/badge.svg)
+[![Deployment workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/deploy.yml/badge.svg)](https://fake-news0.herokuapp.com/)
 ![GitHub](https://img.shields.io/github/license/Legion-God/FakeNewsDetection?color=informational)
 
 Fake News detection using Passive Aggressive classifier.
@@ -9,9 +9,8 @@ Fake News detection using Passive Aggressive classifier.
 ## Contents
 1. [Environment Set Up](#setting-up-development-environment)
 2. [Coding Workflow](#coding-workflow)
-3. [Project Structure](#project-structure)
-4. [How to run website locally](#running-website)
-5. [Fake News References](#fake-news-references)
+3. [How to run website locally](#running-website)
+4. [Fake News References](#fake-news-references)
 
 ## Setting up development environment.
 
@@ -51,17 +50,6 @@ worked on your local machine. You must be on branch from where you want to push 
 Someone else will do a code-review and merge it to `main`. If tests failed when creating a PR request close it and 
    make new PR with changes.
    
-
-## Project Structure
-1. `app` dir contain files related to flask app, where `templates` dir contain html templates,
-change `base.html` for implementing a global style. `index.html` and `results.html` contain page specific html.
-   
-2. If you want to add images/css/js files create a `static` dir inside `app` dir and create `imgs`, `css`, `js` dirs 
-   inside `static` dir which will contain subsequent files.
-   
-3. `pass_agg` is package that will contain model related code.
-
-4. Write unit tests in `tests`, we are using pytest.
 
 ## Running Website
 
