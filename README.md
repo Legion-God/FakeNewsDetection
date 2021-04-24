@@ -1,7 +1,7 @@
 # FakeNewsDetection
 
-![Test workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/tests.yml/badge.svg?event=pull_request)
-[![Deployment workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/deploy.yml/badge.svg?event=push)](https://fake-news0.herokuapp.com/)
+![Test workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/tests.yml/badge.svg)
+[![Deployment workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/deploy.yml/badge.svg)](https://fake-news0.herokuapp.com/)
 ![GitHub](https://img.shields.io/github/license/Legion-God/FakeNewsDetection?color=informational)
 
 Fake News detection using Passive Aggressive classifier.
