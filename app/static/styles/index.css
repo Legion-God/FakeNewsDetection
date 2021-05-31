@@ -1,0 +1,17 @@
+.container-fluid
+{
+    /*background-color:powderblue;*/
+    background-image: linear-gradient(to right, red , blue);
+    color: white;
+    min-height: 100%;
+    padding: 13rem;
+    opacity: 0.8;
+}
+.btn-primary
+{
+    background-color:darkslateblue;
+}
+.container{
+    max-width: 800px;
+}
+
