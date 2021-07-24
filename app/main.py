@@ -1,7 +1,16 @@
 from flask import (Flask,
                    render_template, request)
+from pathlib import Path
+import pickle
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 app = Flask(__name__)
+
+# Load the model and vectorizer vocabulary
+
+model_path = Path(__file__).parent.parent/"Model"
+trained_model = pickle.load(open(model_path/"model.pkl", "rb"))
+trained_tfidf = pickle.load(open(model_path/"tfidf.pkl", "rb"))
 
 
 @app.route('/', methods=['GET'])
@@ -11,8 +20,12 @@ def home():
 
 @app.route('/', methods=['POST'])
 def predict():
-    input_claim = request.form['inputUrl']
-    return render_template('index.html', prediction=input_claim)
+    x = request.form['inputUrl']
+    x = [x]
+    vectorized_x = trained_tfidf.transform(x)
+    y = trained_model.predict(vectorized_x)[0]
+
+    return render_template('index.html', prediction=y)
 
 
 @app.route('/result')
