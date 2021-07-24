@@ -29,6 +29,11 @@
         <h4>The News is most probably {{prediction}}</h4>
       {% endif %}
 
+        <!--  Show the error message    -->
+      {% if error_message %}
+        <h4>{{error_message}}</h4>
+      {% endif %}
+
     </div>
   </div>
 </div>
