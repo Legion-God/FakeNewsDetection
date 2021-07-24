@@ -3,7 +3,7 @@
     /*background-color:powderblue;*/
     background-image: linear-gradient(to right, red , blue);
     color: white;
-    min-height: 100%;
+    min-height: 100vh;
     padding: 13rem;
     opacity: 0.8;
 }
