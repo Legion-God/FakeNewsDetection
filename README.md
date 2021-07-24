@@ -4,7 +4,7 @@
 [![Deployment workflow](https://github.com/Legion-God/FakeNewsDetection/actions/workflows/deploy.yml/badge.svg)](https://fake-news0.herokuapp.com/)
 ![GitHub](https://img.shields.io/github/license/Legion-God/FakeNewsDetection?color=informational)
 
-Fake News detection using Passive Aggressive classifier.
+Fake News detection using Neural Networks.
 
 ## Contents
 1. [Environment Set Up](#setting-up-development-environment)
